@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summer Exploring</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <!---brand-->
+        <a href="index.html">
+            <img src="imgs/logo.png" alt="Logo de Summer Exploring"> 
+            SUMMER EXPLORING
+        </a>
+        <!---navegacion-->
+        <nav>
+            <a href="">Inicio</a>
+            <a href="#promos">Promos</a>
+            <a href="#historia">Historia</a>
+            <a href="#formulario">Contacto</a>
+        </nav>
+
+    </header>
+
+    <section id="heroBanner">
+        <div>
+            <h1>Tiempo de HIKING <br> 
+            en Summer Exploring</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+            </p>
+        </div>
+    </section>
+
+    <main>
+        <section id="letsGo">
+            <h2>Let’s go hiking!</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+            </p>
+        </section>
+
+        <section id="promos">
+            <img src="imgs/promo-1.jpg" alt="imagen promo 1">
+            <article id="promo1">
+                <h2>Descuento hasta 24% en todas las excursiones </h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                </p>
+            </article>
+            <article id="promo2">
+                <h2>Promociones de esta temporada</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                </p>
+            </article>
+            <img src="imgs/promo-2.jpg" alt="iamgen promo 2">
+        </section>
+
+        <h2 id="separador">Hiking de aventura</h2>
+
+        <section id="historia">
+            <!--para poner esto y que se repita automáticamente 3 veces, escribí: article*3 -> si le hubiera agregado un . o un # de esta manera: article.hola*3, me hubiera puesto automáticamente un article con una class de nombre "hola" 3 veces, con el # hubiera sido lo mismo pero con un id. También funciona sin el *n, y lo pone una sola vez-->
+            <article>
+                <img src="imgs/f-Index-1.jpg" alt="">
+                <div>
+                    <h3>Lorem Ipsum</h3>
+                     <p>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    </p>
+                </div>
+            </article> 
+            <article>
+                <img src="imgs/f-Index-2.jpg" alt="">
+                <div>
+                    <h3>Lorem Ipsum</h3>
+                     <p>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    </p>
+                </div>
+            </article>
+            <article>
+                <img src="imgs/f-Index-3.jpg" alt="">
+                <div>
+                    <h3>Lorem Ipsum</h3>
+                     <p>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    </p>
+                </div>
+            </article>
+        </section>
+
+    </main>
+
+    <section id="formulario">
+        <form action="procesa.php" method="post">
+
+            <label> Nombre:
+                <input type="text" name="nombre" required>
+            </label> 
+
+            <label> Email:
+                <input type="email" name="email" required>
+            </label> 
+
+            <label> Comentarios:
+                <textarea name="comentarios" required></textarea>
+            </label> 
+
+            <button>Enviar</button>
+
+        </form>
+    </section>
+
+    <footer>
+        <div id="contenedorFooter">
+
+            <!-- redes sociales -->
+            <div>
+                <a href="#" target="_blank">
+                    <img src="imgs/instagram.png" alt="Logo de Instagram">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="imgs/facebook.png" alt="Logo de Facebook">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="imgs/twitter.png" alt="Logo de Twitter">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="imgs/whatsapp.png" alt="Logo de Whatsapp">
+                </a>
+            </div>
+
+            <!-- enlaces internos -->
+            <nav>
+                <ul>
+                    <li class="tituloLista">Acerca</li>
+                    <li>Historia</li>
+                    <li>Team</li>
+                    <li>Compromiso</li>
+                    <li>Términos</li>
+                </ul>
+                <ul>
+                    <li class="tituloLista">Servicios</li>
+                    <li>Promos</li>
+                    <li>Contratar</li>
+                    <li>Métodos de pago</li>
+                </ul>
+                <ul>
+                    <li class="tituloLista">Otros</li>
+                    <li>Contáctenos</li>
+                    <li>Ayuda</li>
+                    <li>Privacidad</li>
+                </ul>
+            </nav>
+
+        </div>
+    </footer>
+
+</body>
+</html>

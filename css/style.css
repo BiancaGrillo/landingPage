@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    font-family: 'Raleway', sans-serif;
+    color: #707070;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/*encabezado*/
+header{
+    width: 1100px;
+    margin: auto;
+    /*si NO pones el display flex, no va a funcionar el justify content*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
+}
+    header a img{
+        width: 60px;
+        vertical-align: middle;
+        margin-right: 16px;
+    }
+    header a{
+        text-decoration: none; /*saca el subrayado de los links*/
+        color: #707070;
+        font-weight: 600;
+    }
+
+    /* Navegación */
+    header nav a{
+        padding: 14px;
+    }
+
+/* ## Hero Banner ## */
+#heroBanner{
+    height: 500px;
+    background-image: url(../imgs/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center -120px;
+    display: flex;
+    align-items: center;
+}
+    #heroBanner div{
+        width: 1100px;
+        margin: auto;
+    }
+    h1{
+        font-size: 40px;
+        color: #FFB968;
+        font-weight: 600;
+    }
+    #heroBanner div p{
+        width: 400px;
+        margin-top: 24px;
+    }
+
+/* ## Main ## */
+main{
+    width: 1100px;
+    margin: auto;
+}
+
+/* ## Let's go ## */
+#letsGo{
+    height: 330px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; /* Invierte ejes */
+    align-items: center;
+    justify-content: center;
+}
+    #letsGo h2{
+        width: 1100px ;
+        text-align: center;
+        color: #FFB968;
+        font-size: 32px;
+        margin-bottom: 24px;
+        /* margin-top: 100px;*/
+    }
+    #letsGo p{
+        /* margin: auto;     Con el margin-top arriba y este margin: auto podemos lograr lo mismo que con todo lo que pusimos después de display: flex en #letsGo, pero con menos líneas de código. El problema es que no necesariamente menos código es mejor, y en este caso es mejor usar flex para hacer estas cosas, además de que hay que aprender a usarlo*/
+        width: 600px;
+        text-align: center;
+    }
+
+        /* Promos */
+#promos{
+    display: flex;
+    flex-wrap: wrap; /* respeta los anchos de los contenedores*/
+}
+    #promo1, #promo2{ /* agrupamiento */
+        color: #fff;
+        width: 550px;
+        height: 550px;
+        padding: 100px 80px; /* Esto afecta a arriba y abajo (100px) y derecha e izquierda (80px). Un número solo afecta a todos los lados por igual, y cuatro números afectan a cada lado específicamente, en sentido horario.*/
+    }
+    #promo1{
+        background-color: #807871;
+    }
+    #promo2{
+        background-color: #E3B684;
+    }
+    #promos h2{ /* También podría poner solo h2, pero así me parece que queda más claro, además de que esto podría generar problemas con otros h2*/
+        font-size: 32px;
+        font-weight: 600;
+        margin-bottom: 32px;
+    }
+
+/* Separador */
+#separador{
+    font-weight: 600;
+    font-size: 32px;
+    color: #FFB968;
+    margin: 80px;
+    text-align: center;
+}
+
+/* Historia */
+#historia{
+    display: flex;
+    justify-content: space-between;
+}
+    #historia article{
+        width: 339px;
+        height: 450px;
+        background-color: #807871;
+        color: #fff;
+    }
+    #historia article h3{
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+    #historia article div{
+        padding: 16px 32px
+    }
+
+/* FORMULARIO DE CONTACTO */
+#formulario{
+    height: 580px;
+    background-image: url(../imgs/formulario.jpg);
+    background-repeat: no-repeat; /* para que no se repita la foto */
+    background-size: cover; /* el predeterminado es contain, el cover escala la imagen para que cubra toda el area */
+    background-position: center -288px; /* el primer numero la posiciona en el eje x, y el segundo en el eje y. Con un número negativo la levanta un poco. Esto lo vas acomodando de a poco, probando, sino podes cortar la imagen al tamaño correcto antes de subirla al css */
+    margin-top: 64px;
+    padding-top: 50px;
+}
+
+    #formulario form{
+        width: 698px;
+        background-color: #fff;
+        margin: 50px auto 0 auto;
+        padding: 32px;
+        border-radius: 12px; /* redeondea los bordes */
+        border: 1px solid #cecece /* pone un borde de 1px alrededor, en este caso casi que no se nota pero depende de qué color le pongamos */
+    }
+
+    #formulario form label{
+        margin-top: 16px;
+        display: block;
+    }
+
+    #formulario form input, textarea{
+        display: block;
+        width: 100%;
+        margin-top: 8px;
+        font-family: Raleway;
+        font-size: 16px;
+        padding: 8px;
+        border-radius: 8px;
+        border: 1px solid #cecece
+    }
+
+    textarea{
+        height: 104px;
+        resize:none
+    }
+
+    button{
+        background-color: #F7BB74;
+        border-radius: 8px;
+        border: 1px solid #cecece;
+
+        display: block;
+        font-family: Raleway;
+        font-size: 16px;
+        margin-top: 24px;
+        width: 100%;
+        padding: 8px;
+        
+        cursor: pointer /* para que aparezca la manito en el cursor cuando lo pongamos sobre el botón, para indicar interactividad */
+    }
+    button:hover{
+        background-color: #ffac47;
+        font-weight: 600;
+    }
+
+/* Footer */
+footer{
+    background-color: #807871;
+}
+
+    #contenedorFooter{
+        display: flex;
+        justify-content: space-between;
+        width: 1100px;
+        margin: auto;
+        align-items: center;
+        height: 160px;
+    }
+
+    #contenedorFooter img{
+        width: 32px;
+        margin: 8px;
+    }
+
+    #contenedorFooter a{
+        text-decoration: none; /* para sacar las líneas negras que había debajo de las imágenes del nav. Estaban ahí porque eran el subrayado del enlace, ya que las imágenes están enlazadas a links */
+    }
+
+    #contenedorFooter nav{
+        color: #fff;
+        display: flex;
+    }
+
+    #contenedorFooter ul{
+        list-style: none;
+        margin-left: 56px;
+    }
+
+    #contenedorFooter li{
+        margin-bottom: 4px;
+    }
+
+    .tituloLista {
+        margin-bottom: 8px;
+        font-weight: 600;
+    }
